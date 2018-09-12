@@ -21,9 +21,7 @@
                 <DataGridTextColumn Binding="{Binding Name}" Header="Наименование" FontSize="16"/>
                 <DataGridTextColumn Binding="{Binding Price, StringFormat={}{0:n3}}" Header="Колличество"/>
                 <DataGridTextColumn Binding="{Binding Kod}" Header="Сумма"/>
-                <!--<DataGridTextColumn Binding="{Binding Name}" Header="Наименование" FontSize="16"/>
-                <DataGridTextColumn Binding="{Binding Count, StringFormat={}{0:n3}}" Header="Колличество"/>
-                <DataGridTextColumn Binding="{Binding Sum}" Header="Сумма"/>-->
+              
             </DataGrid.Columns>
             <DataGrid.Resources>
                 <Style TargetType="{x:Type DataGridRow}">
@@ -34,18 +32,10 @@
 
                         </Trigger>
 
-                        <!--<DataTrigger Binding="{Binding ElementName=tb, Path=IsSelected}" Value="True">
-                            <Setter Property="TextBlock.Text" Value="Yes!" />
-                            <Setter Property="Foreground" Value="Green" />
-                        </DataTrigger>-->
-                        <!--<Trigger Property="IsSelected"  Value="True" >
-                            
-                            <Setter Property="FontWeight" Value="Bold" />
-                            <Setter Property="FontWeight" Value="Bold" />
-                        </Trigger>-->
+                       
                     </Style.Triggers>
                     <EventSetter Event="MouseEnter" Handler="Row_MouseEnter"/>
-                    <!--<EventSetter Event="PreviewMouseMove" Handler="DataGridCassa_PreviewMouseMove" />-->
+                  
                 </Style>
 
             </DataGrid.Resources>
